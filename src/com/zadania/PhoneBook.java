@@ -15,6 +15,7 @@ public class PhoneBook {
         printContactCard(id, name, surname, age, phoneNumber);
         printContact(id, name, surname, phoneNumber, age);
         System.out.println(getContact(id, name, surname, phoneNumber, age));
+        System.out.println(getContactRaw(id, name, surname, age, phoneNumber, isHidden));
     }
 
     public static void printContactCard(int id, String name, String surname, int age, int phoneNumber)
@@ -30,6 +31,11 @@ public class PhoneBook {
     public static String getContact(int id, String name, String surname, int age, int phoneNumber)
     {
         return (id + " | " + name + " | " + surname + " | " + age + " | " + phoneNumber);
+    }
+
+    public static String getContactRaw(String id, String name, String surname, int age, int phoneNumber, boolean isMobile)
+    {
+        return (id + " | " + name + " | " + surname + " | " + age + " | " + phoneNumber + " | " + isMobile );
     }
 }
 
