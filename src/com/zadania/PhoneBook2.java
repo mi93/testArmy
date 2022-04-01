@@ -90,5 +90,3 @@ public class PhoneBook2 {
         return (id + " | " + name + " | " + surname + " | " + age + " | " + phoneNumber + " | " + isMobile );
     }
 }
-
-

@@ -35,9 +35,10 @@ public class PhoneBook {
 
     public static String getContactRaw(int id, String name, String surname, int age, int phoneNumber, boolean isMobile)
     {
-        return (id + " | " + name + " | " + surname + " | " + age + " | " + phoneNumber + " | " + isMobile );
+        return (id + ";" + name + ";" + surname + ";" + age + ";" + phoneNumber + ";" + isMobile );
     }
 }
+
 
 
 
