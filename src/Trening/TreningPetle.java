@@ -1,4 +1,7 @@
-package com.zadania;
+package Trening;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 
 public class TreningPetle {
     public static void main(String[] args) {
@@ -6,7 +9,8 @@ public class TreningPetle {
 //        System.out.println(obliczSilnię2(6) + " ...oto wynik z metody");
 //        int silnia6 = 1 * 2 * 3 * 4 * 5 * 6;
 //        System.out.println("silnia 6: " + silnia6);
-        nothing();
+        //nothing();
+        nestedLoop();
 
 
     }
@@ -81,14 +85,40 @@ public class TreningPetle {
 //
 // }
 
-    public static void nothing()
+//    public static void nothing()
+//
+//    {
+//        int tab[] = {1, 2, 4};
+//
+//        for (int i : tab) {
+//            System.out.println(i);
+//        }
+//    }
 
+    public static void nestedLoop()
     {
-        int tab[] = {1, 2, 4};
+        int [][] tab = new int[10][10];
+        for (int i=1; i<=10; i++)
+        {
+            ArrayList<Integer> numbers2 = new ArrayList<Integer>();
 
-        for (int i : tab) {
-            System.out.println(i);
+            for (int j=1; j<=10; j++) {
+                numbers2.add(i * j);
+            }
+
+
+            }
+        //System.out.println(numbers);
         }
+    //System.out.println(numbers);
+//    Collections.sort(numbers);
+//    System.out.println(numbers);
     }
 
-}
+
+//    public static int[] addToTable(int m[], int k){
+//        for (int l=0; l<=100; l++){
+//
+//        }
+//    }
+

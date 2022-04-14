@@ -1,5 +1,7 @@
 package com.zadania;
 
+import java.util.Arrays;
+
 public class PhoneBook2 {
     public static void main(String[] args)
     {
@@ -20,11 +22,17 @@ public class PhoneBook2 {
         int tab[] = new int[10];
         System.out.println("Value of index 0: " + getLastDialed(tab));
         System.out.println("Value of index provided by the user: " + getIndex(tab, 4));
-        dial(tab, 2);
         System.out.println("Value of the first index check: " + tab[0]);
         removeLastDialed(tab, 5);
         System.out.println("Value of the 5th index check: " + tab[5]);
 
+        NumberType numberType = NumberType.MOBI;
+        System.out.println("\n################");
+        System.out.println();
+        System.out.println("funkcja dial: " + dial(tab, 5));
+        System.out.println("funkcja dial: " + dial(tab, 6));
+        System.out.println("funkcja dial: " + dial(tab, 4));
+        System.out.println("funkcja dial: " + dial(tab, 2));
     }
 
     public static void printContactCard(int id, String name, String surname, int age, String phoneNumber)
@@ -96,7 +104,7 @@ public class PhoneBook2 {
             phoneNumber = "000000000";
         }
 
-        return (id + " | " + name + " | " + surname + " | " + age + " | " + phoneNumber + " | " + isMobile );
+        return (id + ";" + name + ";" + surname + ";" + age + ";" + phoneNumber + ";" + isMobile );
     }
 
     public static int getLastDialed(int[] tab)
@@ -115,7 +123,12 @@ public class PhoneBook2 {
 
     public static int dial(int[] tab, int id)
     {
-        return tab[0] = id;
+        for (int i = 8; i >= 0; i-- ) {
+            tab[i + 1] = tab[i];
+            tab[0] = id;
+        }
+        System.out.println(Arrays.toString(tab));
+    return tab[0] = id;
     }
 
     public static int removeLastDialed(int[] tab, int index)
@@ -123,4 +136,17 @@ public class PhoneBook2 {
         return tab[index - 1] = 0;
     }
 
+    enum NumberType
+    {
+        HOME ("Domowy"),
+        MOBI ("Komórkowy"),
+        WORK ("Służbowy");
+
+        String type;
+
+        NumberType (String NumType)
+        {
+            type = NumType;
+        }
+    }
 }

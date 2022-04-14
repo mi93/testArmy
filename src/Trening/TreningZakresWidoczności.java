@@ -1,4 +1,4 @@
-package com.zadania;
+package Trening;
 
 public class TreningZakresWidoczności {
 
@@ -8,6 +8,8 @@ public class TreningZakresWidoczności {
         int liczba2 = 2;
         int suma = liczba1 + liczba2;
         System.out.println();
+//        System.out.println("ll".inst);
+
 
 //        public void wypiszCoś() {
 //            System.out.println("Wypisuje sume" + suma);
