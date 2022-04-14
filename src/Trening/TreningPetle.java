@@ -3,9 +3,10 @@ package com.zadania;
 public class TreningPetle {
     public static void main(String[] args) {
         //exampleSwitch();
-        System.out.println(obliczSilnię2(6) + " ...oto wynik z metody");
-        int silnia6 = 1 * 2 * 3 * 4 * 5 * 6;
-        System.out.println("silnia 6: " + silnia6);
+//        System.out.println(obliczSilnię2(6) + " ...oto wynik z metody");
+//        int silnia6 = 1 * 2 * 3 * 4 * 5 * 6;
+//        System.out.println("silnia 6: " + silnia6);
+        nothing();
 
 
     }
@@ -65,17 +66,29 @@ public class TreningPetle {
 //        }
 //    }
 
-        public static int obliczSilnię2(int liczba)
-        {
-            int silnia = 1;
+//        public static int obliczSilnię2(int liczba)
+//        {
+//            int silnia = 1;
+//
+//            if (liczba > 1)
+//            {
+//                for (int n = 2; n <= liczba; n++ ){
+//                    silnia *= n;
+//                }
+//            }
+//        return silnia;
+//        }
+//
+// }
 
-            if (liczba > 1)
-            {
-                for (int n = 2; n <= liczba; n++ ){
-                    silnia *= n;
-                }
-            }
-        return silnia;
+    public static void nothing()
+
+    {
+        int tab[] = {1, 2, 4};
+
+        for (int i : tab) {
+            System.out.println(i);
         }
+    }
 
- }
+}
